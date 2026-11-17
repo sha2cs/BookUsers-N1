@@ -1,7 +1,5 @@
 package claseuser;
 
-import java.util.List;
-
 public class Claseuser {
     private int id;
     private String tipoIdentificacion;
@@ -16,7 +14,7 @@ public class Claseuser {
     private String correo;
     private String rutaFoto;
 
-    public Claseuser(List<Claseuser> claseuserList) {
+    public Claseuser() {
         this.id = 0;
         this.tipoIdentificacion = "";
         this.numeroIdentificacion = "";
