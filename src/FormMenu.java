@@ -12,7 +12,8 @@ public class FormMenu extends JFrame {
 
  public FormMenu () {
      setContentPane(panelPrincipal);
-     setTitle("BookUsers");
+     setTitle("BookUsers - Tu Nombre Completo");
+
      setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
      setSize(400, 500);
      setLocationRelativeTo(null);
