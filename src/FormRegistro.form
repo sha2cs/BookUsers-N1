@@ -10,7 +10,7 @@
     <children>
       <component id="bd460" class="javax.swing.JLabel">
         <constraints>
-          <grid row="15" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="password"/>
@@ -18,7 +18,7 @@
       </component>
       <component id="ad5d5" class="javax.swing.JPasswordField" binding="txtPassword">
         <constraints>
-          <grid row="16" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="15" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -26,7 +26,7 @@
       </component>
       <component id="e245" class="javax.swing.JLabel">
         <constraints>
-          <grid row="17" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="16" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Telefono"/>
@@ -34,7 +34,7 @@
       </component>
       <component id="bc028" class="javax.swing.JTextField" binding="txtTelefono">
         <constraints>
-          <grid row="18" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="17" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -42,7 +42,7 @@
       </component>
       <component id="e57e1" class="javax.swing.JLabel">
         <constraints>
-          <grid row="19" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="18" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Correo"/>
@@ -50,7 +50,7 @@
       </component>
       <component id="d7453" class="javax.swing.JTextField" binding="txtCorreo">
         <constraints>
-          <grid row="20" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="19" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -58,7 +58,7 @@
       </component>
       <component id="a2321" class="javax.swing.JLabel">
         <constraints>
-          <grid row="21" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="20" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Foto"/>
@@ -66,7 +66,7 @@
       </component>
       <component id="62960" class="javax.swing.JButton" binding="btnFoto">
         <constraints>
-          <grid row="22" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="21" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Seleccionar Foto"/>
@@ -74,7 +74,7 @@
       </component>
       <component id="31b4f" class="javax.swing.JLabel" binding="lblRutaFoto">
         <constraints>
-          <grid row="23" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="22" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Sin foto seleccionada"/>
@@ -107,10 +107,10 @@
           <grid row="3" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Número de Identificación"/>
+          <text value="Numero de Identificacion"/>
         </properties>
       </component>
-      <component id="b522f" class="javax.swing.JTextField" binding="txtNúmeroIdentificacion">
+      <component id="b522f" class="javax.swing.JTextField" binding="txtNumeroIdentificacion">
         <constraints>
           <grid row="4" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
@@ -182,21 +182,21 @@
         </constraints>
         <properties/>
       </component>
-      <component id="35901" class="javax.swing.JLabel">
+      <component id="a3132" class="javax.swing.JButton" binding="btnGuardar">
+        <constraints>
+          <grid row="23" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Guardar"/>
+        </properties>
+      </component>
+      <component id="b5c0a" class="javax.swing.JLabel" binding="lblUsername">
         <constraints>
           <grid row="13" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Username"/>
+          <text value="-"/>
         </properties>
-      </component>
-      <component id="f08ec" class="javax.swing.JTextField" binding="txtUsername">
-        <constraints>
-          <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-          </grid>
-        </constraints>
-        <properties/>
       </component>
     </children>
   </grid>

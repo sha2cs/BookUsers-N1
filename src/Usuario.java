@@ -1,6 +1,7 @@
 public class Usuario {
     private int id;
     private String tipoIdentificacion;
+    private String numeroIdentificacion;
     private String primerNombre;
     private String sedundoNombre;
     private String primerApellido;
@@ -11,19 +12,22 @@ public class Usuario {
     private String email;
     private String rutaFoto;
 
-    public Usuario(int id, String tipoIdentificacion, String primerNombre, String sedundoApellido, String primerApellido, String sedundoNombre, String username, String password, String telefono, String email, String rutaFoto) {
+    public Usuario(int id, String tipoIdentificacion, String numeroIdentificacion, String primerNombre, String segundoNombre, String primerApellido, String segundoApellido, String username, String password, String telefono, String email, String rutaFoto) {
         this.id = id;
         this.tipoIdentificacion = tipoIdentificacion;
+        this.numeroIdentificacion = numeroIdentificacion;
         this.primerNombre = primerNombre;
-        this.sedundoApellido = sedundoApellido;
+        this.sedundoNombre = segundoNombre;
         this.primerApellido = primerApellido;
-        this.sedundoNombre = sedundoNombre;
+        this.sedundoApellido = segundoApellido;
         this.username = username;
         this.password = password;
         this.telefono = telefono;
         this.email = email;
         this.rutaFoto = rutaFoto;
-    }
+    }@Override
+    public String toString() {
+    return "#" + id +"-" + primerNombre + " " + primerApellido + "(" + username +")";}
 
     private String generarUsername(){
         String pa = limpiar(primerApellido);

@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 public class FormRegistro extends  javax.swing.JFrame {
     private JComboBox cmbTipoIdentificacion;
-    private JTextField txtNúmeroIdentificacion;
+    private JTextField txtNumeroIdentificacion;
     private JTextField txtPrimerNombre;
     private JTextField txtSegundoNombre;
     private JTextField txtPrimerApellido;
@@ -13,11 +13,14 @@ public class FormRegistro extends  javax.swing.JFrame {
     private JTextField txtCorreo;
     private JButton btnFoto;
     private JLabel lblRutaFoto;
-    private JTextField txtUsername;
     private JPanel panelExterno;
+    private JButton btnGuardar;
+    private JLabel lblUsername;
 
 
     private ArrayList<Usuario> listaUsuarios;
+    private String rutaFoto = "";
+    private static int contadorId = 1;
 
     public FormRegistro(ArrayList<Usuario> listaUsuarios) {
         setTitle("Registrar Usuario");
@@ -28,9 +31,19 @@ public class FormRegistro extends  javax.swing.JFrame {
         setSize(650, 700);
 
         setLocationRelativeTo(null);
+        cargarTiposIdentificacion();
+        configurarUsernameEnVivo();
+        configurarEventos();
         setVisible(true);
+    }
 
-        {
+
+    private void cargarTiposIdentificacion() {
+
+        cmbTipoIdentificacion.removeAllItems();
+
+
+
             cmbTipoIdentificacion.addItem("11 - Registro civil de Nacimiento");
             cmbTipoIdentificacion.addItem("12 - Tarjeta de Identidad");
             cmbTipoIdentificacion.addItem("13 - Cedula de Ciudadania");
@@ -40,8 +53,18 @@ public class FormRegistro extends  javax.swing.JFrame {
             cmbTipoIdentificacion.addItem("42 - Documento de Identificacion Extranjero");
             cmbTipoIdentificacion.addItem("47 - Permiso Especial de Permanencia");
             cmbTipoIdentificacion.addItem("91 - NUIP");
-            cmbTipoIdentificacion.insertItemAt("",0);
+}
+private void configurarUsernameEnVivo(){
+    }
+    private void configurarEventos(){}
 
 
-        }
-    }}
+
+
+}
+
+
+
+
+
+

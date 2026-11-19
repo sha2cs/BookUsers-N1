@@ -6,7 +6,7 @@ public class FormListado extends JFrame {
 
 
     private JPanel panelPrincipal;
-    private JList listaUsuarios;
+    private JList ListaUsuarios;
     private ArrayList<Usuario> usuarios;
     private JButton btnVerDetalle;
 
@@ -15,7 +15,7 @@ public class FormListado extends JFrame {
 
 
         public FormListado(ArrayList<Usuario> Usuarios) {
-            this.listaUsuarios = listaUsuarios;
+            this.ListaUsuarios = ListaUsuarios;
             setTitle("BookUsers - Listado de Usuarios");
             setContentPane(panelPrincipal);
             setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE); // Ventanas secundarias usan DISPOSE
