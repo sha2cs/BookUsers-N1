@@ -22,6 +22,12 @@ public class FormMenu extends JFrame {
          FormRegistro ventana = new FormRegistro(usuarios);
          ventana.setVisible(true);
      });
+
+     btnListado.addActionListener(e -> {
+         FormListado ventana = new FormListado(usuarios);
+         ventana.setVisible(true);
+     });
+
  }
 
  public static void main(String[] args){
