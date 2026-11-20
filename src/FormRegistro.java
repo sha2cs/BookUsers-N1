@@ -1,5 +1,8 @@
 import javax.swing.*;
 import java.util.ArrayList;
+import com.sha2cs.inputfile.*;
+
+
 
 public class FormRegistro extends  javax.swing.JFrame {
     private JComboBox cmbTipoIdentificacion;
@@ -22,7 +25,8 @@ public class FormRegistro extends  javax.swing.JFrame {
     private String rutaFoto = "";
     private static int contadorId = 1;
 
-    public FormRegistro(ArrayList<Usuario> listaUsuarios) {
+    public FormRegistro(ArrayList<Usuario> listaUsuarios){
+    this.listaUsuarios= listaUsuarios;
         setTitle("Registrar Usuario");
         setContentPane(panelExterno);
 
@@ -56,7 +60,43 @@ public class FormRegistro extends  javax.swing.JFrame {
 }
 private void configurarUsernameEnVivo(){
     }
-    private void configurarEventos(){}
+    private void configurarEventos() {
+        btnFoto.addActionListener(e -> {
+
+            java.io.File foto = InputFile.elegir(this);
+            if (foto != null)
+                rutaFoto = foto.getAbsolutePath();
+            if (lblRutaFoto != null) {
+                lblRutaFoto.setText(rutaFoto);
+            }
+        });
+
+
+
+
+
+
+    btnGuardar.addActionListener(e -> {
+        Usuario nuevoUsuario = new Usuario(
+                contadorId++,
+                String.valueOf(cmbTipoIdentificacion.getSelectedItem()),
+                txtNumeroIdentificacion.getText().trim(),
+                txtPrimerNombre.getText().trim(),
+                txtSegundoNombre.getText().trim(),
+                txtPrimerApellido.getText().trim(),
+                txtSegundoApellido.getText().trim(),
+                lblUsername.getText().trim(),
+                new String(txtPassword.getPassword()),
+                txtTelefono.getText().trim(),
+                txtCorreo.getText().trim(),
+                rutaFoto
+        );
+
+        listaUsuarios.add(nuevoUsuario);
+        JOptionPane.showMessageDialog(this, "Usuario guardado correctamente.");
+        dispose();
+    });
+}
 
 
 

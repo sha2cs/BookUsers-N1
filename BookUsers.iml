@@ -7,5 +7,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="inputfile-java" level="project" />
+    <orderEntry type="library" name="generate-pdf-java" level="project" />
   </component>
 </module>

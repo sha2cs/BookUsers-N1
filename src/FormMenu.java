@@ -39,10 +39,22 @@ public class FormMenu extends javax.swing.JFrame {
         panelPrincipal.add(btnCreditos);
 
         // Configurar acciones de los botones
-        btnRegistrar.addActionListener(e -> {
+        btnRegistrar.addActionListener(e ->{
+
             FormRegistro formReg = new FormRegistro(listaUsuarios);
             formReg.setVisible(true);
         });
+        btnListado.addActionListener(e -> {
+                    new FormListado(listaUsuarios).setVisible(true);
+                });
+
+        btnCreditos.addActionListener(e -> {
+                    new FormCreditos().setVisible(true);
+                });
+
+
+
+
 
         // Ajustar tamaño y visibilidad
         pack();

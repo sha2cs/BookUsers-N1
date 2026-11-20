@@ -3,9 +3,9 @@ public class Usuario {
     private String tipoIdentificacion;
     private String numeroIdentificacion;
     private String primerNombre;
-    private String sedundoNombre;
+    private String segundoNombre;
     private String primerApellido;
-    private String sedundoApellido;
+    private String segundoApellido;
     private String username;
     private String password;
     private String telefono;
@@ -17,21 +17,22 @@ public class Usuario {
         this.tipoIdentificacion = tipoIdentificacion;
         this.numeroIdentificacion = numeroIdentificacion;
         this.primerNombre = primerNombre;
-        this.sedundoNombre = segundoNombre;
+        this.segundoNombre = segundoNombre;
         this.primerApellido = primerApellido;
-        this.sedundoApellido = segundoApellido;
+        this.segundoApellido = segundoApellido;
         this.username = username;
         this.password = password;
         this.telefono = telefono;
         this.email = email;
         this.rutaFoto = rutaFoto;
+        this.username = generarUsername();
     }@Override
     public String toString() {
     return "#" + id +"-" + primerNombre + " " + primerApellido + "(" + username +")";}
 
     private String generarUsername(){
         String pa = limpiar(primerApellido);
-        String sa = limpiar(sedundoApellido);
+        String sa = limpiar(segundoApellido);
         String pn = limpiar(primerNombre);
 
         String letra1 = pa.isEmpty() ? "" : pa.substring(0, 1);
@@ -53,12 +54,12 @@ public class Usuario {
         return primerNombre;
     }
 
-    public String getSedundoNombre() {
-        return sedundoNombre;
+    public String getSegundoNombre() {
+        return segundoNombre;
     }
 
-    public String getSedundoApellido() {
-        return sedundoApellido;
+    public String getSegundoApellido() {
+        return segundoApellido;
     }
 
     public String getPrimerApellido() {
