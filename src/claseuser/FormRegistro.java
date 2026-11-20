@@ -25,7 +25,7 @@ public class FormRegistro extends JFrame {
     private JLabel foto;
     private JButton btnGuardar;
 
-    private ArrayList<Usuario> usuarios;
+    private ArrayList<Claseuser> usuarios;
     private String rutaFotoSeleccionada = "";
 
     private static int contadorId = 1;
@@ -150,21 +150,7 @@ public class FormRegistro extends JFrame {
             return;
         }
 
-        // Crear objeto Usuario con ID único asignado por el programa
-        Claseuser nuevo = Claseuser (
-                contadorId++,
-                tipoId,
-                numeroId,
-                pnombre,
-                snombre,
-                pApellido,
-                sApellido,
-                username,
-                password,
-                telefono,
-                correo,
-                rutaFotoSeleccionada
-        );
+        Claseuser nuevo = new Claseuser ( );
 
         usuarios.add(nuevo);
         JOptionPane.showMessageDialog(this, "Usuario registrado con éxito. ID asignado: " + nuevo.getId(), "Registro exitoso", JOptionPane.INFORMATION_MESSAGE);

@@ -58,7 +58,7 @@ public class FormMenu extends JFrame{
 
 
     public static void main(String[] args) {
-        ArrayList<Claseuser> usuario = new ArrayList<>();
+        ArrayList <Claseuser> usuario =new ArrayList <Claseuser>();
 
         List<Claseuser> lista = new ArrayList<>();
 
