@@ -1,51 +1,41 @@
-# BookUsers · POO 2026B · Grupo N1 · UNIPAZ
+# BookUsers - POO 2026B - Grupo N1 - UNIPAZ
 
-Proyecto base del ejercicio BookUsers: registro de usuarios con Java Swing.
-Programación Orientada a Objetos · Ingeniería Informática · Escuela de Ciencias.
+## Información del estudiante
 
-## Contenido
+- **Nombre:** Luis Alejandro Bravo Escobar
+- **Código interno del estudiante:** 276
+- **Grupo:** N1
+- **Asignatura:** Programación Orientada a Objetos
+- **Programa:** Ingeniería Informática
 
-Proyecto Java vacío, tal como lo crea IntelliJ IDEA: carpeta `src/` sin clases, configuración del módulo y `.gitignore`.
-Todo el código (formularios, clases y paquetes) lo crea cada estudiante en su propia rama.
+## Descripción
+
+BookUsers es una aplicación de escritorio desarrollada en Java 21 con Swing para registrar y administrar usuarios mediante una interfaz gráfica.
+
+## Funcionalidades
+
+- Registro de usuarios con datos personales.
+- Generación automática del nombre de usuario.
+- Carga de fotografía.
+- Listado de usuarios registrados.
+- Consulta de detalles de cada usuario.
+- Edición de teléfono y correo electrónico.
+- Eliminación de usuarios.
+- Generación de documentos PDF con OpenPDF.
+- Ventana de créditos.
 
 ## Requisitos
 
-- IntelliJ IDEA con el plugin **Swing UI Designer** (Settings → Plugins → Marketplace).
-- JDK 21. Al abrir el proyecto, si IntelliJ indica *Project SDK is not defined*, se selecciona el JDK instalado.
+- Java JDK 21.
+- IntelliJ IDEA.
+- Plugin Swing UI Designer.
+- Librería OpenPDF 1.3.39, incluida en la carpeta `lib`.
 
-## Procedimiento de entrega
+## Instrucciones de ejecución
 
-1. **Fork** de este repositorio: botón *Fork* → **quitar la marca de «Copy the main branch only»** → *Create fork*. Así el fork trae todas las ramas del grupo, incluida la propia.
-2. **Clonar el fork** desde Git Bash. El clon deja configurado `origin` apuntando al fork; no hay que configurar nada más.
-   ```bash
-   git clone https://github.com/USUARIO/BookUsers-N1.git
-   cd BookUsers-N1
-   ```
-3. **Cambiar a la rama propia ANTES de escribir código.** La rama ya existe en el fork con el formato `ApellidoNombre` (primer apellido + primer nombre, sin tildes, sin ñ y sin espacios). Se busca en la lista y se activa:
-   ```bash
-   git branch -a                 # remotes/origin/ApellidoNombre
-   git switch ApellidoNombre     # set up to track 'origin/ApellidoNombre'
-   git status                    # On branch ApellidoNombre
-   ```
-   - **Todo el desarrollo y todos los commits van en esa rama.** `main` no recibe ningún commit.
-   - Si `git switch` responde *invalid reference*, el fork se creó solo con `main`: se borra el fork y se repite el paso 1.
-4. **Abrir en IntelliJ:** File → Open → carpeta `BookUsers-N1`. Si aparece *Project SDK is not defined*, se selecciona el JDK instalado.
-5. **Commits con mensajes que describen el cambio** (mínimo uno por versión: v1, v2, v3, v4) y push a la rama propia:
-   ```bash
-   git status                    # debe decir: On branch ApellidoNombre
-   git add .
-   git commit -m "Se crea el formulario de bienvenida"
-   git push                      # ApellidoNombre -> ApellidoNombre
-   ```
-   El primer `git push` abre el navegador para iniciar sesión en GitHub; no se usa la contraseña.
-6. **Pull Request** desde el fork (*Contribute* → *Open pull request*) con:
-   - base repository: este repositorio · **base: la rama con el nombre del estudiante** (no `main`)
-   - head repository: el fork · compare: la rama del estudiante
-   - Título: nombre completo y grupo. El Pull Request no se cierra ni se borra.
-
-## Reglas
-
-- El título de cada ventana incluye el nombre completo del estudiante.
-- Lo que se revisa es el **historial de commits** del Pull Request: fechas, tamaño y orden de los cambios.
-- Un solo commit con todo el proyecto no demuestra el proceso de trabajo.
-- Los forks de un repositorio público son públicos: el código y el historial de cada estudiante son visibles.
+1. Clonar o descargar el repositorio.
+2. Abrir el proyecto `BookUsers-N1` en IntelliJ IDEA.
+3. Configurar el JDK 21.
+4. Verificar que el plugin Swing UI Designer esté habilitado.
+5. Agregar `lib/openpdf-1.3.39.jar` como dependencia del proyecto si no aparece configurada.
+6. Ejecutar la clase
