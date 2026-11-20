@@ -9,7 +9,6 @@ public class FormCreditos extends JFrame {
     private JLabel lblFoto2;
     private JButton btnCerrar;
 
-    // Constructor sin parámetros (según arquitectura de la sección 2)
     public FormCreditos() {
         setContentPane(panelPrincipal);
         setTitle("BookUsers · Créditos");
@@ -22,8 +21,6 @@ public class FormCreditos extends JFrame {
     }
 
     private void cargarFotosIntegrantes() {
-        // Opcional: Si guardas fotos dentro de una carpeta de recursos (ej. /img/integrante1.jpg)
-        // Si no vas a poner fotos, puedes dejar estos métodos comentados o eliminar los JLabel
         escalarFotoRecurso("/img/integrante1.jpg", lblFoto1);
         escalarFotoRecurso("/img/integrante2.jpg", lblFoto2);
     }

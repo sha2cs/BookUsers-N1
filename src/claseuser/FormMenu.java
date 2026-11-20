@@ -23,7 +23,7 @@ public class FormMenu extends JFrame{
         registro.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e){
-                FormRegistro formRegistro = new FormRegistro(usuario);
+                FormRegistro formRegistro = new FormRegistro ();
                 registro.setLocation(30,30);
                 registro.setVisible(true);
                 registro.setSize(20,20);
@@ -34,7 +34,7 @@ public class FormMenu extends JFrame{
         listado.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e){
-                FormListado listado1 = new FormListado();
+                FormListado listado = new FormListado();
                 listado.setVisible(true);
                 listado.setBounds(50,50,120,30);
 
