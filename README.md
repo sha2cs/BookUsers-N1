@@ -49,3 +49,19 @@ Todo el código (formularios, clases y paquetes) lo crea cada estudiante en su p
 - Lo que se revisa es el **historial de commits** del Pull Request: fechas, tamaño y orden de los cambios.
 - Un solo commit con todo el proyecto no demuestra el proceso de trabajo.
 - Los forks de un repositorio público son públicos: el código y el historial de cada estudiante son visibles.
+
+## BookUsers
+
+Proyecto final de Programacion orientada a Objetos
+
+## Desarrolladora
+
+Nombre: Daurith barva
+Codigo estudiantil: UNP-L842-4A8D
+
+## Cómo ejecutar el proyecto
+
+1. clonar o descargar el repositorio 
+2. Abrir el proyecto en intellij IDEA
+3. configurar el JDK 21
+4. ejecutar el metodo main de FormMenu.java.
