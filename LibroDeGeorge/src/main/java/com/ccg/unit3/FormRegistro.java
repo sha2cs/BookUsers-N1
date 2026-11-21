@@ -3,7 +3,10 @@ package com.ccg.unit3;
 import javax.swing.*;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
+import java.util.ArrayList;
 public class FormRegistro {
+    private ArrayList<Usuario> usuarios;
+    private FormMenu menu;
     private JPanel panelPrincipal;
     private JComboBox cmbTipoId;
     private JTextField txtNumeroId;
@@ -12,13 +15,16 @@ public class FormRegistro {
     private JTextField txtSegundoNombre;
     private JTextField txtPrimerNombre;
     private JPasswordField txtPassword;
-    private JTextField txtTeléfono;
-    private JTextField TxtCorreo;
+    private JTextField txtTelefono;
+    private JTextField txtCorreo;
     private JButton btnCargarFoto;
     private JButton btnGuardar;
     private JLabel lblUsername;
     private JLabel lblFoto;
-    public FormRegistro(){
+    public FormRegistro(ArrayList<Usuario>usuarios, FormMenu menu){
+
+        this.usuarios = usuarios;
+        this.menu = menu;
 
         DocumentListener listener = new DocumentListener() {
 
@@ -54,6 +60,10 @@ public class FormRegistro {
         String apellido1 = txtPrimerApellido.getText().trim();
         String apellido2 = txtSegundoApellido.getText().trim();
 
+        btnGuardar.addActionListener(e -> {
+            guardarUsuario();
+        });
+
         String username = "";
 
         if (!apellido1.isEmpty()) {
@@ -73,6 +83,45 @@ public class FormRegistro {
         username = username.toLowerCase().replaceAll("\\s+", "");
 
         lblUsername.setText(username);
+    }
+
+    private void guardarUsuario() {
+
+        String nombre = txtPrimerNombre.getText().trim();
+        String apellido = txtPrimerApellido.getText().trim();
+        String numeroId = txtNumeroId.getText().trim();
+        String telefono = txtTelefono.getText().trim();
+        String correo = txtCorreo.getText().trim();
+        String password = new String(txtPassword.getPassword());
+
+        if (nombre.isEmpty() || apellido.isEmpty() ||
+        numeroId.isEmpty() || telefono.isEmpty() ||
+        correo.isEmpty() || password.isEmpty()) {
+        }
+
+        if (!correo.contains("@")) {
+            JOptionPane.showMessageDialog(
+                    panelPrincipal,
+                    "El correo debe contener @."
+            );
+            return;
+        }
+        int id = menu.GenerarId();
+
+        Usuario nuevoUsuario = new Usuario(
+                id,
+                cmbTipoId.getSelectedItem().toString(),
+                numeroId,
+                nombre,
+                txtSegundoNombre.getText().trim(),
+                apellido,
+                txtSegundoApellido.getText().trim(),
+                lblUsername.getText(),
+                password,
+                telefono,
+                correo,
+                ""
+        );
     }
     public JPanel getPanelPrincipal(){
         return panelPrincipal;

@@ -8,16 +8,16 @@ import java.util.ArrayList;
 public class FormMenu {
 
     private JPanel PanelPrincipal;
-    private JButton btnRegistrar;
     private JButton btnListado;
+    private JButton btnRegistrar;
     private JButton btnCreditos;
-    private ArrayList<Usuario> Usuarios = new ArrayList<>();
-
+    private ArrayList<Usuario> usuarios = new ArrayList<>();
+    private int siguienteId = 1;
     public FormMenu() {
-        btnListado.addActionListener(new ActionListener() {
+        btnRegistrar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                FormRegistro registro = new FormRegistro();
+                FormRegistro registro = new FormRegistro(usuarios, FormMenu.this);
 
                 JFrame ventana = new JFrame("BookUsers - Registrar usuario");
 
@@ -28,12 +28,15 @@ public class FormMenu {
                 ventana.setVisible(true);
             }
         });
-        btnRegistrar.addActionListener(new ActionListener() {
+        btnListado.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
             }
         });
+        }
+    public int GenerarId(){
+        return siguienteId++;
     }
 
     public static void main(String[] args) {
