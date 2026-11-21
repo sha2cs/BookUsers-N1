@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="generate-pdf-java">
+    <CLASSES>
+      <root url="file:///opt/generate-pdf-java.jar" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
